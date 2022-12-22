@@ -1,10 +1,97 @@
 *,
 *::after,
-* ::before {
+*::before {
   margin: 0;
   padding: 0;
 }
 
 img {
   max-width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.fa-bars {
+  font-size: larger;
+  color: black;
+}
+.fa-bars:hover,
+#mylinks {
+  display: block;
+}
+#mylinks {
+  display: none;
+}
+body {
+  max-width: 384px;
+}
+
+/* MAIN STYLING */
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.google-logo {
+  width: 70px;
+}
+.user {
+  border-radius: 50%;
+}
+
+/* SEARCH BAR */
+.search-input {
+  display: flex;
+  padding: 1em 2em;
+  box-shadow: 0px 2px 5px 0px rgb(60 64 67 / 16%);
+  border-radius: 25px;
+  margin: 0 2em;
+}
+.input-field {
+  width: 100%;
+  outline: none;
+  border-style: none;
+  color: black;
+  /* background: rgb(250, 248, 248); */
+}
+.fa-magnifying-glass {
+  color: grey;
+  margin-right: 0.5em;
+  margin-left: 0;
+}
+.search-icon {
+  width: 25px;
+  margin-left: 0.5em;
+}
+
+/* NAV STYLING */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+  height: 36px;
+  margin-left: -3px;
+  margin-right: -3px;
+  box-shadow: 0px 1px 3px 0px rgb(60 64 67 / 8%);
+  padding-bottom: 8px;
+}
+.main-nav a {
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  padding-right: 8px;
+  padding-left: 11px;
+  margin-left: -4px;
+  color: grey;
+}
+#active {
+  color: black;
+  border-bottom: 1px solid black;
+  /* text-decoration: underline; */
 }
