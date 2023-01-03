@@ -228,7 +228,8 @@ body {
   padding: 1em;
   border-radius: 1em;
 }
-.bio-cards {
+.bio-cards,
+.bio-cards2 {
   display: flex;
   overflow-x: auto;
 }
@@ -239,13 +240,39 @@ body {
   min-width: 125px;
   border-radius: 1em;
 }
-.bio .bio-cards-details {
+.bio-cards-details {
   background: rgba(226, 238, 255, 0.5);
   display: flex;
+  margin-top: 0;
+  padding: 1em 0.5em;
 }
 .bio-card2 {
   background: white;
   margin: 0.3em;
+  border-radius: 1em;
+}
+.bio-card2 p {
+  padding: 0 1em 1em 0.8em;
+}
+.bio-cards2 .bio-card {
+  margin-bottom: 0;
+}
+.bio-img {
+  position: relative;
+}
+.bio-img img {
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+.fa-circle-play {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: white;
+}
+.bio-logo {
+  width: 50px;
+  padding-left: 1em;
 }
 /* MATCHES */
 .matches {
