@@ -216,6 +216,37 @@ body {
   margin: 0 0.2em;
 }
 
+/* BIO */
+.bio {
+  padding: 1em;
+}
+.bioimages img {
+  border-radius: 1em;
+}
+.bio-card1 {
+  background: rgba(226, 238, 255, 0.5);
+  padding: 1em;
+  border-radius: 1em;
+}
+.bio-cards {
+  display: flex;
+  overflow-x: auto;
+}
+.bio-card {
+  padding: 1em;
+  background: rgba(226, 238, 255, 0.5);
+  margin: 0.5em 0.3em;
+  min-width: 125px;
+  border-radius: 1em;
+}
+.bio .bio-cards-details {
+  background: rgba(226, 238, 255, 0.5);
+  display: flex;
+}
+.bio-card2 {
+  background: white;
+  margin: 0.3em;
+}
 /* MATCHES */
 .matches {
   border-bottom: 4px solid #ebedef;
@@ -225,8 +256,8 @@ body {
 }
 #matches {
   display: flex;
-  /* justify-content: space-evenly; */
-  overflow-x: auto;
+  justify-content: space-between;
+  overflow-x: scroll;
 }
 .match {
   display: flex;
@@ -252,13 +283,14 @@ body {
   /* padding: 1em;
     border: 1px solid #ebedef;
     margin-bottom: 1em; */
-  overflow: hidden;
-  margin: 0 4px;
-  width: 232px;
+  /* overflow: hidden; */
+  margin: 0.5em;
+  min-width: 232px;
   border: 1px solid #dadce0;
   border-radius: 8px;
-  min-height: 155px;
+  /* min-height: 155px; */
   font-size: 0.8em;
+  padding-bottom: 0;
 }
 .match-card-top {
   height: 80px;
@@ -273,7 +305,8 @@ body {
 .match-stats {
   background: #f8f9fa;
   border-radius: 0 0 8px 8px;
-  padding: 8px 12px 8px 12px;
+  padding: 0.5em;
+  margin-top: 1em;
 }
 .country-flag p {
   padding-top: 10px;
@@ -285,17 +318,49 @@ body {
 .country-flag img {
   width: 15px;
 }
+
+/* WIKI */
+.wiki {
+  padding: 2em;
+  border-bottom: 4px solid #ebedef;
+}
+.wiki-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+.wiki-details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.2em;
+}
+.wiki-details {
+  display: flex;
+  justify-content: space-between;
+}
+.wiki-details p {
+  padding: 1em 0 0.7em 0;
+}
+.flex-info {
+  border: 1px solid #dadce0;
+  margin-right: 0.5em;
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
+
 /* SEARCHES */
 .searches {
   padding: 1em;
+  border-bottom: 4px solid #ebedef;
 }
 
 /* ABOUT */
 .about {
   padding: 1em;
   line-height: 1.5;
-  box-shadow: 0 0 0 1px #ebedef;
+  /* box-shadow: 0 0 0 1px #ebedef; */
   border-radius: 0;
+  border-bottom: 4px solid #ebedef;
 }
 #about {
   display: flex;
@@ -310,6 +375,11 @@ body {
 .flex {
   display: flex;
   align-items: center;
+}
+.flex img {
+  border: 3px solid #dadce0;
+  border-radius: 50%;
+  width: 25px;
 }
 #about .flex a {
   padding-left: 1em;
