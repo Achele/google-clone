@@ -216,6 +216,45 @@ body {
   margin: 0 0.2em;
 }
 
+/* TWITTER */
+.twitter {
+  padding: 1em;
+  border-bottom: 4px solid #ebedef;
+}
+.twitter h3 {
+  padding-bottom: 1em;
+}
+.twitter-card {
+  min-width: 200px;
+  border: 1px solid #ebedef;
+  margin-right: 1em;
+  border-radius: 0.5em;
+}
+.tweetcard-header {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+.tweetcard-header-info {
+  padding-left: 0.8em;
+}
+.tweetcard-header-info h5 {
+  font-size: 0.5em;
+  padding-bottom: 1em;
+  color: #4d5156;
+}
+.tweetcard-header img {
+  width: 50px;
+  border-radius: 50%;
+}
+.twitter-card .images img {
+  width: 100px;
+}
+.tweet-info,
+.bottom {
+  padding: 1em 0.5em;
+}
+
 /* BIO */
 .bio {
   padding: 1em;
