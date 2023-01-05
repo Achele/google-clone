@@ -178,7 +178,7 @@ body {
   line-height: 20px;
   padding: 0 1em;
 }
-.website{
+.website {
   padding-left: 1em;
 }
 .card-header,
@@ -220,14 +220,14 @@ body {
 }
 
 /* ALSO */
-.also{
+.also {
   border-bottom: 4px solid #ebedef;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
-.also h3{
-  padding: .5em;
+.also h3 {
+  padding: 0.5em;
 }
-.also-info{
+.also-info {
   padding-top: 1em;
 }
 
@@ -541,7 +541,14 @@ tr {
 /* SOCIAL PROFILES */
 .socials {
   display: flex;
-  align-items: center;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+}
+.social p {
+  font-size: 0.8em;
+  padding: 0 0.5em;
 }
 .social-img {
   border: 1px solid rgb(241, 241, 241);
@@ -569,19 +576,19 @@ tr {
 .video {
   position: relative;
 }
-.video p{
+.video p {
   position: absolute;
   color: white;
   /* bottom: 10; */
   top: 190px;
-  font-size: .5em;
+  font-size: 0.5em;
   left: 10px;
   /* right: 10px; */
 }
-.video span{
+.video span {
   position: absolute;
   top: 160px;
-  font-size: .3em;
+  font-size: 0.3em;
   color: white;
   bottom: 30px;
 }
