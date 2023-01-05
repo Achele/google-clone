@@ -178,6 +178,9 @@ body {
   line-height: 20px;
   padding: 0 1em;
 }
+.website{
+  padding-left: 1em;
+}
 .card-header,
 .card-header1 {
   display: flex;
@@ -214,6 +217,18 @@ body {
   width: 200px;
   height: 80px;
   margin: 0 0.2em;
+}
+
+/* ALSO */
+.also{
+  border-bottom: 4px solid #ebedef;
+  padding-bottom: .5em;
+}
+.also h3{
+  padding: .5em;
+}
+.also-info{
+  padding-top: 1em;
 }
 
 /* TWITTER */
@@ -526,6 +541,7 @@ tr {
 /* SOCIAL PROFILES */
 .socials {
   display: flex;
+  align-items: center;
 }
 .social-img {
   border: 1px solid rgb(241, 241, 241);
@@ -535,12 +551,12 @@ tr {
   position: relative;
 }
 .social img {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 0;
-  bottom: 10;
-  right: auto;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
 }
 
 /* VIDEOS */
@@ -553,11 +569,21 @@ tr {
 .video {
   position: relative;
 }
-.video p {
+.video p{
   position: absolute;
-  bottom: 10;
-  top: 70;
-  /* font-size: .5em; */
+  color: white;
+  /* bottom: 10; */
+  top: 190px;
+  font-size: .5em;
+  left: 10px;
+  /* right: 10px; */
+}
+.video span{
+  position: absolute;
+  top: 160px;
+  font-size: .3em;
+  color: white;
+  bottom: 30px;
 }
 .vid-logo {
   border-radius: 50%;
