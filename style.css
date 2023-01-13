@@ -148,6 +148,9 @@ body {
 }
 
 /* NEWS SECTION STYLING */
+.desktop-main {
+  display: none;
+}
 .news {
   padding: 1em;
 }
@@ -745,9 +748,19 @@ footer ul li {
 .see-more p {
   margin: 0 auto;
 }
+.desktop-gooogle {
+  display: none;
+}
+.desktop-related-searches,
+.desktop-stats,
+.desktop-header-content,
+.large-nav-grey,
+.desktop-bio {
+  display: none;
+}
 
 /* MEDIA QUERY FOR LARGER SCREEN */
-@media (min-width: 385px) {
+@media (min-width: 600px) {
   body {
     width: 100%;
     overflow-x: auto;
@@ -778,6 +791,12 @@ footer ul li {
   }
   .large-nav2 img {
     margin: 0 0.5em;
+  }
+  .large-nav-grey,
+  .desktop-stats,
+  .desktop-header-content,
+  .desktop-bio {
+    display: block;
   }
   .large-nav-grey p {
     padding: 1em 0 1em 11em;
@@ -823,5 +842,215 @@ footer ul li {
   }
   .large-nav1 .google-logo {
     width: 5em;
+  }
+  .sticky {
+    display: none;
+  }
+  .desktop-sticky {
+    background: white;
+    padding: 2em;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    /* box-shadow: 0px 1px 3px 0px rgb(60 64 67 / 8%); */
+    /* height: 70px;  */
+  }
+  .header-content {
+    display: none;
+  }
+  .desktop-header-content {
+    display: flex;
+    padding: 1em 0 1em 10em;
+  }
+  .desktop-header-content img {
+    width: 40px;
+    border-radius: 0.5em;
+    margin-right: 0.5em;
+  }
+  .name-info {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+  }
+  .name-info p {
+    padding: 1em 1em 1em 0;
+  }
+  .desktop-stats {
+    padding-top: 2em;
+  }
+  .desktop-stats .stats {
+    padding: 0.6em 1em;
+  }
+  header {
+    border-bottom: 1px solid rgb(241, 241, 241);
+  }
+  .desktop-main {
+    display: flex;
+  }
+  .desktop-main1 {
+    width: 65%;
+    padding: 0 3em 0 9em;
+  }
+  .desktop-bio-wrapper {
+    display: flex;
+    padding-right: 1em;
+  }
+  .bioimages img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .desktop-sideview {
+    border-left: 1px solid rgb(241, 241, 241);
+    width: 35%;
+    padding: 0.5em 8em 0 1em;
+    margin-top: 1em;
+  }
+  .desktop-card {
+    display: flex;
+    align-items: center;
+    padding: 0 1em 1em 1em;
+  }
+  /* .bio-cards-details .bio-card2{
+    padding-right: 1em;
+  } */
+  .desktopcard-img img {
+    border-radius: 0.5em;
+  }
+  .cards2 .desktop-card:nth-child(1) {
+    border-bottom: 1px solid rgb(241, 241, 241);
+    margin: 0 0.5em;
+  }
+  .desktop-card-img {
+    width: 100px;
+    height: 80px;
+    border-radius: 0.5em;
+  }
+  .desktop-card-info p {
+    padding-bottom: 2em;
+  }
+  .desktopcard {
+    padding: 1em 0.5em;
+    border-right: 1px solid rgb(241, 241, 241);
+  }
+  .desktop-news {
+    padding: 1em;
+  }
+  .desktop-news h4 {
+    padding: 1em 0 0 0;
+    font-weight: 500;
+  }
+  .desktop-news > p {
+    padding: 0.5em 0 1em 0;
+    border-bottom: 1px solid rgb(241, 241, 241);
+  }
+  .news {
+    display: none;
+  }
+  .twitter {
+    display: none;
+  }
+  .desktop-twitter {
+    color: #70757a;
+    padding-bottom: 1em;
+  }
+  .desktop-twitter p {
+    color: blue;
+    padding: 0.5em 0 1em 0;
+  }
+  .bio,
+  .about,
+  .searches,
+  .highlights,
+  .statistics,
+  .profiles,
+  .broaden-search,
+  .related-searches,
+  .liverpool,
+  .times,
+  .short-videos {
+    display: none;
+  }
+  .wiki {
+    width: 50%;
+    padding: 0 6em 0 10em;
+    border-bottom: none;
+  }
+  .wiki-details p {
+    font-size: 0.9em;
+    padding-bottom: 0;
+  }
+  .wiki-details img {
+    padding-top: 0;
+  }
+  .flex-info {
+    margin-top: 0;
+  }
+  .matches {
+    width: 50%;
+    padding-left: 10em;
+    border-bottom: none;
+  }
+  .short-videos {
+    padding-left: 10em;
+  }
+  .desktop-videos {
+    display: flex;
+  }
+  .videos {
+    padding-left: 10em;
+    border-bottom: none;
+  }
+  .more-stats {
+    width: 30%;
+  }
+  .desktop-related-searches {
+    padding-left: 10em;
+  }
+  .desktop-searches {
+    display: flex;
+    align-items: center;
+  }
+  .related-search {
+    width: 90%;
+    background: #f1f3f4;
+    margin: 0 1em 1em 0;
+    border-radius: 1em;
+    padding: 0.8em 1em;
+  }
+  .desktop-search2 .related-search {
+    margin-left: 1em;
+  }
+  .desktop-gooogle {
+    display: block;
+    padding: 1em 10em 2em 15em;
+  }
+  .desktop-gooogle1,
+  .desktop-gooogle2 {
+    display: flex;
+    align-items: center;
+  }
+  .desktop-gooogle1 li {
+    font-size: 3em;
+  }
+  .desktop-gooogle2 li {
+    /* margin: 0 .em; */
+    font-size: 0.8em;
+    color: blue;
+    padding-left: 2.5em;
+  }
+  .red > a {
+    color: red;
+  }
+  .orange > a {
+    color: orange;
+  }
+  .blue > a {
+    color: blue;
+  }
+  .green > a {
+    color: green;
+  }
+  footer .see-more {
+    display: none;
   }
 }
