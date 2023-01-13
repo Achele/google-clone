@@ -1005,6 +1005,7 @@ footer ul li {
   }
   .desktop-related-searches {
     padding-left: 10em;
+    display: block;
   }
   .desktop-searches {
     display: flex;
